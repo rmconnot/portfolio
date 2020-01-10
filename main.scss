@@ -105,7 +105,7 @@ nav  {
 .project {
     width: 800px;
     height: 360px;
-    background: #d8e3ee;
+    background: linear-gradient(#60c5d9, white);
     margin: 2em;
     border-style: solid;
     border-width: .5px;
@@ -127,10 +127,10 @@ nav  {
 .project-title {
 position: absolute;
 bottom:0;
-top:77%;
+top:75%;
 width: 100%;
 height: 100%;
-background-color: rgba(25, 25, 25, 0.7);
+background-color: rgba(25, 25, 25, 0.8);
 transition: opacity .5s;
 opacity: 1;
 overflow: hidden;
@@ -189,10 +189,21 @@ top:0;
   object-fit: cover;
 }
 
+#vnp-img {
+  width: 60%;
+  height: auto;
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  transition: .5s;
+  border-radius: 10px;
+
+}
+
 #credit {
   text-align: center;
   font-weight: 100;
-  color: grey;
+  color: rgb(54, 53, 53);
 }
 
 
@@ -285,11 +296,10 @@ top:0;
 
 /* Blue Sky page */
 
-#case-study-title {
+.case-study-title {
   margin-top: 240px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 60px;
 }
 
 #case-study-subtitle {
@@ -309,15 +319,14 @@ top:0;
   padding-bottom: 5rem;
 }
 
-#blue-sky-sites-title {
+#case-study-title {
   font-size: 3rem;
   animation: fadein 2.5s;
   font-weight: 500;
 }
 
-.blue-sky-links {
-  font-size: 1.5rem;
-  padding-top: 2.5rem;
+.case-study-links {
+  font-size: 20px;
   font-weight: 500;
   animation: fadein 4s;
 
@@ -332,7 +341,7 @@ a:hover {
 }
 }
 
-.blue-sky-headers {
+.case-study-header {
   color: black;
   padding: 1.5rem 0rem 1.5rem 0rem;
   font-size: 2rem;
@@ -341,7 +350,7 @@ a:hover {
 
 }
 
-.blue-sky-research-paragraphs {
+.case-study-paragraph {
   line-height: 2rem;
   font-size: 20px;
   font-weight: 300;
@@ -356,9 +365,10 @@ a:hover {
   animation: fadein 4s;
   margin-top: 2rem;
   font-family: 'open-sans',sans-serif;
+  padding-bottom: 40px;
 }
 
-.blue-sky-bullets, .blue-sky-secondary-list {
+.case-study-bullets, .case-study-secondary-list {
   margin-left: 5rem;
   line-height: 2rem;
   font-size: 20px;
@@ -395,10 +405,15 @@ a:hover {
   font-family: 'open-sans',sans-serif;
 }
 
-.blue-sky-research-subheadings {
+.case-study-subheading {
   font-size: 1.7rem;
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
+}
+
+.case-study-subsubheading {
+  font-size: 1.6rem;
+  font-weighT: 500;
 }
 
 #blue-sky-sitemap {
@@ -407,14 +422,14 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
-#blue-sky-photo {
+.case-study-photo {
   width: 100%;
   height: 50vh;
   object-fit: cover;
 }
 
 .forward-path {
-  margin-top: 3.6rem;
+  margin-top: 4rem;
   display: flex;
   justify-content: right;
 }
@@ -446,7 +461,7 @@ a:hover {
 }
 
 .button-container {
-  margin-top: 180px;
+  margin-top: 250px;
 }
 
 .view-project {
@@ -503,6 +518,89 @@ a:hover {
     padding-left: 1rem;
   }
 
-  #blue-sky-view-button {
-    margin-top:250px;
+.underline {
+  text-decoration: underline;
+  color: white;
+}
+
+.underline-case-study {
+  text-decoration: underline;
+  color: grey;
+}
+
+.flex-screenshots-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  .flex-screenshot {
+    width: 30vw;
+    height: auto;
+    margin: 1.5vw;
+    text-align: center;
+
+    img {
+      width: 30vw;
+      height: auto;
+    }
   }
+}
+
+.screenshot {
+  text-align: center;
+    #navbar {
+    width: 50vw;
+    height: auto;
+    }
+    img {
+      width: 30vw;
+      height: auto;
+    }
+}
+
+.screenshot-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+#wireframe-homepage, #wireframe-footer, #wireframe-explore, #wireframe-stories, #mockup-homepage, #mockup-explore, #mockup-stories {
+
+  img {
+  border-style: solid;
+  border-width: 1px;
+}
+}
+
+#wireframe-footer {
+
+  img {
+  width: 50vw;
+  height: auto;
+  text-align: left;
+}
+}
+
+#mockup-homepage {
+
+  img {
+    width: 45vw;
+  }
+}
+
+#rich-brew-link {
+
+  a, a:visited, a:focus, a:link {
+    color: #00528b;
+  }
+}
+
+#coming-soon {
+  
+  p {
+    top: 40%;
+    left: 50%;
+    margin-left: -96px;
+    font-size: 2rem;
+  }
+}
