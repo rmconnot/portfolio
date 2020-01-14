@@ -646,7 +646,7 @@ a:hover {
 }
 
 #non-floated-container {
-  margin-top: 4vw;
+  margin-top:4vw;
 }
 
 .body-link {
@@ -661,4 +661,8 @@ a:hover {
     text-decoration: underline;
     text-decoration-style: wavy;
   }
+}
+
+.clear {
+  clear: both;
 }

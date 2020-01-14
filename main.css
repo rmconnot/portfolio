@@ -709,4 +709,8 @@ nav a:hover {
   -webkit-text-decoration-style: wavy;
           text-decoration-style: wavy;
 }
+
+.clear {
+  clear: both;
+}
 /*# sourceMappingURL=main.css.map */
