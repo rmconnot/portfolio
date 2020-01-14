@@ -648,3 +648,17 @@ a:hover {
 #non-floated-container {
   margin-top: 4vw;
 }
+
+.body-link {
+  color: #00528b;
+
+  a, a:visited, a:focus, a:link {
+    text-decoration:none;
+    color: #00528b;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+  }
+}

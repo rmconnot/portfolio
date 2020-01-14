@@ -694,4 +694,19 @@ nav a:hover {
 #non-floated-container {
   margin-top: 4vw;
 }
+
+.body-link {
+  color: #00528b;
+}
+
+.body-link a, .body-link a:visited, .body-link a:focus, .body-link a:link {
+  text-decoration: none;
+  color: #00528b;
+}
+
+.body-link a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-style: wavy;
+          text-decoration-style: wavy;
+}
 /*# sourceMappingURL=main.css.map */
