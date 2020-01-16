@@ -76,8 +76,6 @@ nav a:hover {
   color: #00528b;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  -webkit-text-decoration-style: wavy;
-          text-decoration-style: wavy;
 }
 
 .current-page {
@@ -315,8 +313,6 @@ nav a:hover {
 .about-text a:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  -webkit-text-decoration-style: wavy;
-          text-decoration-style: wavy;
 }
 
 .about-photo {
@@ -378,8 +374,6 @@ nav a:hover {
 .case-study-links a:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  -webkit-text-decoration-style: wavy;
-          text-decoration-style: wavy;
 }
 
 .case-study-header {
@@ -700,8 +694,6 @@ nav a:hover {
 
 .body-link a:hover {
   text-decoration: underline;
-  -webkit-text-decoration-style: wavy;
-          text-decoration-style: wavy;
 }
 
 .clear {
