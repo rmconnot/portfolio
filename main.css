@@ -361,7 +361,7 @@ nav a:hover {
 
 .case-study-links {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-animation: fadein 4s;
           animation: fadein 4s;
 }
@@ -685,6 +685,7 @@ nav a:hover {
 .body-link {
   color: #00528b;
   font-weight: 400;
+  text-decoration: none;
 }
 
 .body-link a, .body-link a:visited, .body-link a:focus, .body-link a:link {
@@ -692,7 +693,7 @@ nav a:hover {
   color: #00528b;
 }
 
-.body-link a:hover {
+.body-link:hover {
   text-decoration: underline;
 }
 
