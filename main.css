@@ -690,6 +690,7 @@ nav a:hover {
 
 .body-link {
   color: #00528b;
+  font-weight: 400;
 }
 
 .body-link a, .body-link a:visited, .body-link a:focus, .body-link a:link {
