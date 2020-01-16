@@ -104,6 +104,7 @@ nav a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 50px;
+  max-width: 1200px;
 }
 
 .project {
