@@ -709,7 +709,11 @@ nav a:hover {
 }
 
 .case-study-summary .case-study-heading {
-  padding-top: 4.2rem;
+  padding-top: 4rem;
   margin-top: 3.5rem;
+}
+
+.case-study-summary #first-summary-subheading {
+  padding-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
