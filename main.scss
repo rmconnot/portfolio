@@ -24,9 +24,10 @@ table, caption, tbody, tfoot, thead, tr, th, td, p {
 }
 
 .wrapper {
-  max-width: 80%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1600px;
 }
 
 nav  {
@@ -41,6 +42,7 @@ nav  {
     display:flex;
     align-items: flex-end;
     justify-content: space-between;
+    max-width: 1600px;
     
   
     ul {
@@ -656,4 +658,16 @@ a:hover {
 
 .clear {
   clear: both;
+}
+
+.case-study-summary {
+  background: #f6f6f6;
+  box-shadow: 8px 8px 16px 0 grey;
+  border-radius: 10px;
+
+    .case-study-header {
+      padding-top: 4.5rem;;
+      margin-top: 3.5rem;
+    }
+
 }
