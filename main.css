@@ -304,13 +304,13 @@ nav a:hover {
   -webkit-animation: fadein 4.5s;
           animation: fadein 4.5s;
   font-weight: 300;
-  font-family: 'open-sans',sans-serif;
+  font-family: 'Open Sans',sans-serif;
 }
 
 .about-text a, .about-text a:visited, .about-text a:focus, .about-text a:link {
   text-decoration: none;
   color: #00528b;
-  font-family: 'open-sans',sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-weight: 400;
 }
 
@@ -396,7 +396,7 @@ nav a:hover {
   font-weight: 300;
   -webkit-animation: fadein 4s;
           animation: fadein 4s;
-  font-family: 'open-sans',sans-serif;
+  font-family: 'Open Sans',sans-serif;
 }
 
 .case-study-additional-info {
@@ -406,7 +406,7 @@ nav a:hover {
   -webkit-animation: fadein 4s;
           animation: fadein 4s;
   margin-top: 2rem;
-  font-family: 'open-sans',sans-serif;
+  font-family: 'Open Sans',sans-serif;
   padding-bottom: 40px;
 }
 
@@ -415,13 +415,17 @@ nav a:hover {
   line-height: 2rem;
   font-size: 20px;
   font-weight: 300;
-  font-family: 'open-sans',sans-serif;
+  font-family: 'Open Sans',sans-serif;
 }
 
 .case-study-bullets li, .case-study-secondary-list li {
   padding-top: .25rem;
   padding-bottom: .5rem;
-  font-family: 'open-sans',sans-serif !important;
+  font-family: 'Open Sans',sans-serif !important;
+}
+
+.case-study-bullets span, .case-study-secondary-list span {
+  font-family: 'Open Sans',sans-serif !important;
 }
 
 .number-large {
@@ -429,7 +433,7 @@ nav a:hover {
 }
 
 .embolden {
-  font-weight: 900;
+  font-weight: 600;
 }
 
 #small-paragraph-spacing {
@@ -442,7 +446,7 @@ nav a:hover {
 
 .numbered-paragraphs {
   padding-bottom: 1.5rem;
-  font-family: 'open-sans',sans-serif;
+  font-family: 'Open Sans',sans-serif;
 }
 
 .case-study-subheading {
@@ -537,7 +541,7 @@ nav a:hover {
 .pros-cons p {
   padding-left: 1rem;
   padding-top: 1rem;
-  font-family: 'open-sans',sans-serif;
+  font-family: 'Open Sans',sans-serif;
 }
 
 .left-cells {
@@ -551,7 +555,7 @@ nav a:hover {
   border-width: 1px;
   border-color: black;
   width: 50%;
-  font-family: 'open-sans',sans-serif;
+  font-family: 'Open Sans',sans-serif;
 }
 
 .pros-cons td li {
