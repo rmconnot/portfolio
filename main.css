@@ -628,10 +628,6 @@ nav a:hover {
   text-align: left;
 }
 
-#mockup-homepage img {
-  width: 45vw;
-}
-
 #rich-brew-link a, #rich-brew-link a:visited, #rich-brew-link a:focus, #rich-brew-link a:link {
   color: #00528b;
 }
@@ -707,8 +703,8 @@ nav a:hover {
 
 .case-study-summary {
   background: #f4f4f4;
-  -webkit-box-shadow: 8px 8px 16px 0 grey;
-          box-shadow: 8px 8px 16px 0 grey;
+  -webkit-box-shadow: 8px 8px 16px 4px grey;
+          box-shadow: 8px 8px 16px 4px grey;
   border-radius: 10px;
 }
 
@@ -719,5 +715,17 @@ nav a:hover {
 
 .case-study-summary #first-summary-subheading {
   padding-top: 1rem;
+}
+
+#rich-brew-mobile-home img, #rich-brew-mobile-explore img, #rich-brew-mobile-stories img {
+  width: 15vw;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#rich-brew-mobile-explore-mockup img {
+  width: 20vw;
+  border-style: solid;
+  border-width: 1px;
 }
 /*# sourceMappingURL=main.css.map */
