@@ -329,8 +329,8 @@ nav a:hover {
 .about-photo img {
   max-width: 80%;
   height: auto;
-  -webkit-box-shadow: 5px 10px #36454f;
-          box-shadow: 5px 10px #36454f;
+  -webkit-box-shadow: 10px 10px rgba(27, 76, 109, 0.9);
+          box-shadow: 10px 10px rgba(27, 76, 109, 0.9);
 }
 
 /* Blue Sky page */
