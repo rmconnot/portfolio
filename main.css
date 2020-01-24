@@ -329,8 +329,8 @@ nav a:hover {
 .about-photo img {
   max-width: 80%;
   height: auto;
-  -webkit-box-shadow: 10px 10px rgba(27, 76, 109, 0.9);
-          box-shadow: 10px 10px rgba(27, 76, 109, 0.9);
+  -webkit-box-shadow: 7px 7px rgba(27, 76, 109, 0.9);
+          box-shadow: 7px 7px rgba(27, 76, 109, 0.9);
 }
 
 /* Blue Sky page */
@@ -399,15 +399,23 @@ nav a:hover {
   font-family: 'Open Sans',sans-serif;
 }
 
+.case-study-paragraph .embolden {
+  font-family: 'Open Sans',sans-serif;
+}
+
 .case-study-additional-info {
   line-height: 2rem;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 300;
   -webkit-animation: fadein 4s;
           animation: fadein 4s;
   margin-top: 2rem;
   font-family: 'Open Sans',sans-serif;
   padding-bottom: 40px;
+}
+
+.case-study-additional-info span {
+  font-family: 'Open Sans',sans-serif;
 }
 
 .case-study-bullets, .case-study-secondary-list {
@@ -548,6 +556,7 @@ nav a:hover {
   border-right-style: solid;
   border-width: 1px;
   border-color: black;
+  padding-right: 1px;
 }
 
 .pros-cons th {
