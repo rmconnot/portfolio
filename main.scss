@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap');
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, blockquote, pre,
@@ -259,13 +258,13 @@ top:0;
     line-height: 2rem;
     animation: fadein 4.5s;
     font-weight: 300;
-    font-family: 'Open Sans',sans-serif;
+    font-family: sans-serif;
   }
 
   a, a:visited, a:focus,a:link {
     text-decoration:none;
     color: #00528b;
-    font-family: 'Open Sans',sans-serif;
+    font-family: sans-serif;
     font-weight: 400;
 }
 
@@ -326,6 +325,7 @@ top:0;
   a, a:visited, a:focus,a:link {
     text-decoration:none;
     color: #00528b;
+    font-family: sans-serif;
 }
 
 a:hover {
@@ -346,12 +346,13 @@ a:hover {
 .case-study-paragraph {
   line-height: 2rem;
   font-size: 20px;
-  font-weight: 300;
   animation: fadein 4s;
-  font-family: 'Open Sans',sans-serif;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-style: normal;
 
   .embolden {
-    font-family: 'Open Sans',sans-serif;
+    font-family: sans-serif;
   }
 }
 
@@ -361,11 +362,11 @@ a:hover {
   font-weight: 300;
   animation: fadein 4s;
   margin-top: 2rem;
-  font-family: 'Open Sans',sans-serif;
+  font-family: sans-serif;
   padding-bottom: 40px;
 
   span {
-    font-family: 'Open Sans',sans-serif;
+    font-family: sans-serif;
   }
 }
 
@@ -374,16 +375,16 @@ a:hover {
   line-height: 2rem;
   font-size: 20px;
   font-weight: 300;
-  font-family: 'Open Sans',sans-serif;
+  font-family: sans-serif;
 
   li {
     padding-top: .25rem;
     padding-bottom: .5rem;
-    font-family: 'Open Sans',sans-serif !important;
+    font-family: sans-serif !important;
   }
 
   span {
-    font-family: 'Open Sans',sans-serif !important;
+    font-family: sans-serif !important;
   }
 }
 
@@ -407,7 +408,7 @@ a:hover {
 
 .numbered-paragraphs {
   padding-bottom: 1.5rem;
-  font-family: 'Open Sans',sans-serif;
+  font-family: sans-serif;
 }
 
 .case-study-subheading {
@@ -497,7 +498,7 @@ a:hover {
   p {
     padding-left: 1rem;
     padding-top: 1rem;
-    font-family: 'Open Sans',sans-serif;
+    font-family: sans-serif;
   }
 }
 
@@ -513,7 +514,7 @@ a:hover {
   border-width: 1px;
   border-color: black;
   width: 50%;
-  font-family: 'Open Sans',sans-serif;
+  font-family: sans-serif;
 
 }
 
@@ -648,6 +649,7 @@ a:hover {
   color: #00528b;
   font-weight: 400;
   text-decoration:none;
+  font-family: sans-serif;
 
   a, a:visited, a:focus, a:link {
     text-decoration:none;

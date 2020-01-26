@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -304,13 +303,13 @@ nav a:hover {
   -webkit-animation: fadein 4.5s;
           animation: fadein 4.5s;
   font-weight: 300;
-  font-family: 'Open Sans',sans-serif;
+  font-family: sans-serif;
 }
 
 .about-text a, .about-text a:visited, .about-text a:focus, .about-text a:link {
   text-decoration: none;
   color: #00528b;
-  font-family: 'Open Sans',sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
 }
 
@@ -373,6 +372,7 @@ nav a:hover {
 .case-study-links a, .case-study-links a:visited, .case-study-links a:focus, .case-study-links a:link {
   text-decoration: none;
   color: #00528b;
+  font-family: sans-serif;
 }
 
 .case-study-links a:hover {
@@ -393,14 +393,15 @@ nav a:hover {
 .case-study-paragraph {
   line-height: 2rem;
   font-size: 20px;
-  font-weight: 300;
   -webkit-animation: fadein 4s;
           animation: fadein 4s;
-  font-family: 'Open Sans',sans-serif;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .case-study-paragraph .embolden {
-  font-family: 'Open Sans',sans-serif;
+  font-family: sans-serif;
 }
 
 .case-study-additional-info {
@@ -410,12 +411,12 @@ nav a:hover {
   -webkit-animation: fadein 4s;
           animation: fadein 4s;
   margin-top: 2rem;
-  font-family: 'Open Sans',sans-serif;
+  font-family: sans-serif;
   padding-bottom: 40px;
 }
 
 .case-study-additional-info span {
-  font-family: 'Open Sans',sans-serif;
+  font-family: sans-serif;
 }
 
 .case-study-bullets, .case-study-secondary-list {
@@ -423,17 +424,17 @@ nav a:hover {
   line-height: 2rem;
   font-size: 20px;
   font-weight: 300;
-  font-family: 'Open Sans',sans-serif;
+  font-family: sans-serif;
 }
 
 .case-study-bullets li, .case-study-secondary-list li {
   padding-top: .25rem;
   padding-bottom: .5rem;
-  font-family: 'Open Sans',sans-serif !important;
+  font-family: sans-serif !important;
 }
 
 .case-study-bullets span, .case-study-secondary-list span {
-  font-family: 'Open Sans',sans-serif !important;
+  font-family: sans-serif !important;
 }
 
 .number-large {
@@ -454,7 +455,7 @@ nav a:hover {
 
 .numbered-paragraphs {
   padding-bottom: 1.5rem;
-  font-family: 'Open Sans',sans-serif;
+  font-family: sans-serif;
 }
 
 .case-study-subheading {
@@ -549,7 +550,7 @@ nav a:hover {
 .pros-cons p {
   padding-left: 1rem;
   padding-top: 1rem;
-  font-family: 'Open Sans',sans-serif;
+  font-family: sans-serif;
 }
 
 .left-cells {
@@ -564,7 +565,7 @@ nav a:hover {
   border-width: 1px;
   border-color: black;
   width: 50%;
-  font-family: 'Open Sans',sans-serif;
+  font-family: sans-serif;
 }
 
 .pros-cons td li {
@@ -695,6 +696,7 @@ nav a:hover {
   color: #00528b;
   font-weight: 400;
   text-decoration: none;
+  font-family: sans-serif;
 }
 
 .body-link a, .body-link a:visited, .body-link a:focus, .body-link a:link {
