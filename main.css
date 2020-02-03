@@ -299,7 +299,7 @@ nav a:hover {
 .about-text p {
   padding-top: 30px;
   font-size: 22px;
-  line-height: 2rem;
+  line-height: 2.2rem;
   -webkit-animation: fadein 4.5s;
           animation: fadein 4.5s;
   font-weight: 300;
@@ -391,7 +391,7 @@ nav a:hover {
 }
 
 .case-study-paragraph {
-  line-height: 2rem;
+  line-height: 2.2rem;
   font-size: 20px;
   -webkit-animation: fadein 4s;
           animation: fadein 4s;
@@ -405,7 +405,7 @@ nav a:hover {
 }
 
 .case-study-additional-info {
-  line-height: 2rem;
+  line-height: 2.2rem;
   font-size: 21px;
   font-weight: 300;
   -webkit-animation: fadein 4s;
