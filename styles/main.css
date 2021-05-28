@@ -343,6 +343,15 @@ nav a:hover {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 5rem;
+  max-width: 1000px;
+}
+
+.summary-text {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5rem;
+  max-width: 1200px;
 }
 
 .case-study-header {
@@ -535,6 +544,8 @@ nav a:hover {
   -webkit-box-shadow: 8px 8px 16px 4px grey;
   box-shadow: 8px 8px 16px 4px grey;
   border-radius: 10px;
+  max-width: 1400px;
+  margin: auto;
 }
 
 .case-study-summary .case-study-heading {
@@ -632,9 +643,9 @@ nav a:hover {
 }
 
 .flex-screenshots-container .flex-screenshot {
-  width: 30vw;
+  width: 40%;
   height: auto;
-  margin: 1.5vw;
+  margin: 2%;
   text-align: center;
 }
 
@@ -699,7 +710,7 @@ nav a:hover {
 
 /* Michigan Engineering */
 .events-feed-block--applied img {
-  width: 40vw;
+  width: 50%;
   border-style: solid;
   border-width: 1px;
 }
