@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="./styles/main.css" />
+		<title>Bloom | Robert Connot</title>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<nav>
+				<div class="logo">
+					<a href="index.html"><img src="./images/robertconnot-logo.png" /></a>
+				</div>
+				<ul class="navigation-menu">
+					<li><a href="index.html" class="current-page">Work</a></li>
+					<li><a href="About.html">About</a></li>
+				</ul>
+			</nav>
+
+			<div class="case-study-header">
+				<h1 class="case-study-title">Bloom</h1>
+				<h2 id="case-study-subtitle">
+					Building a mobile app that helps gardeners manage their gardens
+				</h2>
+				<p class="case-study-additional-info">
+					<span class="embolden">Type</span> Individual Project
+					<br />
+					<span class="embolden">Role</span> Lead Developer
+					<br />
+					<span class="embolden">Tech</span> React Native, Expo, Firebase
+					(NoSQL), Git, Figma
+					<br />
+					<span class="embolden">Timespan</span> Fall 2020 | 4 weeks
+					<br />
+				</p>
+			</div>
+
+			<img class="case-study-photo" src="./images/bloom-cover-image1.jpg" />
+
+			<div class="case-study-summary">
+				<div id="case-study-text">
+					<h2 class="case-study-heading">Summary</h2>
+					<h3 class="case-study-subheading" id="first-summary-subheading">
+						Problem
+					</h3>
+					<p class="case-study-paragraph">
+						Gardeners, especially beginners, can be easily overwhelmed by the
+						responsibilities involved with starting and maintaining a garden.
+						Specifically, knowing which plants are suited to growing in their
+						area, and then monitoring the progress of those plants (after
+						they've been planted), can be considerable obstacles for gardeners.
+					</p>
+					<h3 class="case-study-subheading">Actions</h3>
+					<p class="case-study-paragraph">
+						I designed and developed a simple mobile app that enables users to
+						discover which plants are suitable to their location (based on
+						zipcode), add them to their virtual garden, then monitor the plants'
+						progress by adding notes and photos.
+					</p>
+					<h3 class="case-study-subheading">Results</h3>
+					<p class="case-study-paragraph">
+						An MVP of the app has been built, and is currently undergoing
+						iterative impovements before being deployed.
+						<br /><br />
+						<a
+							class="body-link"
+							href="https://github.com/rmconnot/Bloom"
+							target="blank"
+							>Bloom GitHub repository</a
+						>
+					</p>
+				</div>
+			</div>
+			<div id="case-study-text">
+				<h2 class="case-study-heading">Background</h2>
+
+				<p class="case-study-paragraph">
+					Many members of my family are avid gardeners. Since they are fairly
+					geographically dispersed, they are limited in the relevant gardening
+					knowledge they can share with eachother. Plants that grow well in one
+					region may not grow well (or at all) in another. Additionally, many of
+					them take notes about their gardens on paper and experience difficulty
+					organizing and referencing these notes.
+				</p>
+
+				<p class="case-study-paragraph">
+					The United States Department of Agriculture (USDA) assigns hardiness
+					zones to regions of the United States so that farmers (and gardeners)
+					can better understand how well different plants will grow in a
+					specific region. It's relatively easy to determine which hardiness
+					zone you live in; however, it's difficult to determine which plants
+					are suitable to your hardiness zone. There is no centralized database
+					of all the plants and their hardiness zones.
+				</p>
+
+				<p class="case-study-paragraph">
+					For the final project of my
+					<i>SI 669 - Developing Mobile Experiences</i> course, I designed and
+					built a mobile app that provides a list of plants that are suitable to
+					the user's hardiness zone. Additionally, users can create a virtual
+					representation of their garden(s) and add their plants to it. Finally,
+					they can add notes and images to their gardens' plants to help monitor
+					their progress and even help plan for the next year.
+				</p>
+
+				<h2 class="case-study-heading">Backend</h2>
+				<p class="case-study-paragraph">
+					For the purposes of this app, I essentially needed to create a series
+					of nested one-to-many relationships (users -> gardens -> plants ->
+					notes). This led to me explore NoSQL databases as possible backend
+					solutions. Ultimately, I found
+					<span class="embolden">Google Firebase</span> and decided that its
+					<a
+						class="body-link"
+						href="https://wordpress.org/gutenberg/"
+						target="blank"
+						>Firestore Database</a
+					>
+					service fit the needs of this project perfectly.
+				</p>
+
+				<p class="case-study-paragraph">
+					Firestore is a NoSQL database composed of <i>collections</i> and
+					<i>documents</i>. The collections are essentially arrays, while the
+					documents act as objects. For this project, I used three primary
+					collections: Users, Plants, and Zipcodes. However, the Users
+					collection contains a number of nested collections and documents. The
+					Plants and Zipcodes collections only contain documents.
+				</p>
+				<br /><br />
+				<div class="screenshot" id="bloom-db-diagram">
+					<img src="./images/bloom-db-diagram.png" />
+					<div class="screenshot-subtitle">Bloom Database Diagram</div>
+				</div>
+				<br /><br />
+				<p class="case-study-paragraph">
+					Firebase provides a number of backend features that facilitate basic
+					CRUD functionality, as well as more advanced features such as
+					subscriptions. Although this setup made development simple and easy,
+					it also created some headache when trying to implement custom backend
+					functionality (e.g. duplicate username prevention). Much of this
+					functionality had to be moved to the frontend.
+				</p>
+
+				<h2 class="case-study-heading">Frontend</h2>
+				<p class="case-study-paragraph">
+					The app's frontend was built in React Native and used the Expo
+					framework to tap into native features, such as the camera. In order to
+					communicate with the backend, it uses the
+					<a
+						class="body-link"
+						href="https://www.npmjs.com/package/firebase"
+						target="blank"
+						>Firebase SDK</a
+					>, which provides a number of built-in CRUD functions for both the
+					Firestore database and the Firebase Storage service (which is used to
+					store user photos).
+				</p>
+
+				<p class="case-study-paragraph">
+					To start, I created a rough series of
+					<a
+						class="body-link"
+						href="https://www.figma.com/file/ENl24E9HDrDFfhauTMh5G4/SI-699-Final-Project?node-id=0%3A1"
+						target="blank"
+						>low-fidelity wireframes</a
+					>
+					to demonstrate the app's user flow.
+				</p>
+				<div class="screenshot mockup">
+					<img src="./images/bloom-wireframes.png" />
+					<div class="screenshot-subtitle">Bloom Wireframes</div>
+				</div>
+				<p class="case-study-paragraph">
+					I then created a basic React Native app and built out the necessary
+					functionality. For the data model, I used the simpleton pattern to
+					reduce complexity. Next, I styled the the screens and their elements.
+					The functionality of the app was relatively simple to develop;
+					however, this was my first experience using React Native's styling
+					functionality. Using flex properly within React Native can be
+					frustrating and took awhile to fully understand.
+				</p>
+				<div class="case-study-video">
+					<iframe
+						src="https://drive.google.com/file/d/1strHp2-2C2yc3e9jVH36fmkuJ3QZHxIe/preview"
+						scrolling="no"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						scrolling="no"
+					></iframe>
+				</div>
+				<h2 class="case-study-heading">Next Steps</h2>
+
+				<p class="case-study-paragraph">
+					Some of the top priorities moving forward include:
+				</p>
+				<ul class="case-study-bullets">
+					<li>Improve the styling on the app's frontend</li>
+					<li>Improve the UX of the login process</li>
+					<li>Add more plants to the database</li>
+					<li>Add stock images for all of the plants</li>
+					<li>
+						Provide an option to automatically determine the user's hardiness
+						zone based on their phone's GPS location
+					</li>
+					<li>
+						Enable the user to set up reminders through the app (e.g. water the
+						tomatoes)
+					</li>
+					<li>Provide more advanced filtering/sorting options for plants</li>
+				</ul>
+				<div class="forward-path">
+					<a href="index.html">
+						<div class="more-projects"><p>View More Projects</p></div>
+					</a>
+				</div>
+			</div>
+
+			<p id="credit">© 2021 Handcrafted by Robert Connot</p>
+		</div>
+	</body>
+</html>

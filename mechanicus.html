@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="./styles/main.css" />
+		<title>Mechanicus | Robert Connot</title>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<nav>
+				<div class="logo">
+					<a href="index.html"><img src="./images/robertconnot-logo.png" /></a>
+				</div>
+				<ul class="navigation-menu">
+					<li><a href="index.html" class="current-page">Work</a></li>
+					<li><a href="About.html">About</a></li>
+				</ul>
+			</nav>
+
+			<div class="case-study-header">
+				<h1 class="case-study-title">Mechanicus</h1>
+				<h2 id="case-study-subtitle">
+					Building a mobile app that provides automobile repair services on
+					demand
+				</h2>
+				<p class="case-study-additional-info">
+					<span class="embolden">Type</span> Team Project
+					<br />
+					<span class="embolden">Role</span> Full-Stack Developer
+					<br />
+					<span class="embolden">Tech</span> React Native, Node + Express,
+					GraphQL, PostgreSQL, Prisma, Expo, Heroku, Git, Figma
+					<br />
+					<span class="embolden">Timespan</span> Spring 2021 | 14 weeks
+					<br />
+				</p>
+			</div>
+
+			<img class="case-study-photo" src="./images/mechanicus-cover.jpg" />
+
+			<div class="case-study-summary">
+				<div id="case-study-text">
+					<h2 class="case-study-heading">Summary</h2>
+					<h3 class="case-study-subheading" id="first-summary-subheading">
+						Problem
+					</h3>
+					<p class="case-study-paragraph">
+						Currently, having simple repairs (oil change, brake replacement,
+						etc.) done on a vehicle requires customers to bring their vehicle to
+						a mechanic shop, leaving them either stuck at the shop, or without
+						their vehicle for hours (potentially days).
+					</p>
+					<h3 class="case-study-subheading">Actions</h3>
+					<p class="case-study-paragraph">
+						My team and I worked with our client
+						<a
+							href="https://www.mechanicus.info/"
+							target="blank"
+							class="body-link"
+							>Mechanicus</a
+						>
+						to design, develop, and deploy a mobile app that enables users to
+						request mechanical services for their vehicle, schedule an
+						appointment, and have a mechanic come to their home to perform the
+						services.
+					</p>
+					<h3 class="case-study-subheading">Results</h3>
+					<p class="case-study-paragraph">
+						Version 1 of the app has been deployed to the App Store, and the
+						backend has been deployed through Heroku. Our team handed the
+						project off to our client at the end of the semester. Our client has
+						plans to release the app to Android through the Google Play Store in
+						the future.
+					</p>
+				</div>
+			</div>
+			<div id="case-study-text">
+				<h2 class="case-study-heading">Background</h2>
+
+				<p class="case-study-paragraph">
+					<i>SI 699 - User-Centered Agile Developent</i> was the capstone course
+					for my HCI Master's program at University of Michigan. The course
+					primarily involved working, in teams of 4-5, with a client from the
+					Ann Arbor area to help them solve a specific technology / business
+					problem they were experiencing. Our client was the owner of a small
+					start-up called
+					<a
+						href="https://www.mechanicus.info/"
+						target="blank"
+						class="body-link"
+						>Mechanicus</a
+					>, which provides a service where customers can request automobile
+					repair services, and a mechanic will arrive at their home to perform
+					them.
+				</p>
+				
+				<p class="case-study-paragraph">
+					Up until we started working with them, Mechanicus had handled nearly
+					all of their business operations manually through their website (built
+					w/ SquareSpace) and Excel spreadsheets. They wanted a fully-featured
+					mobile app that would allow users to create profiles, get repair
+					quotes, schedule appointments, and pay for their repair services.
+				</p>
+				<h2 class="case-study-heading">Tech Stack</h2>
+                <br><br>
+				<div class="colored-box-container">
+					<div class="colored-box blue-bg">
+						<h3 class="case-study-subheading">Backend</h3>
+						<p>Node.js</p>
+						<p><span class="embolden">Middleware: </span>Express.js</p>
+						<p><span class="embolden">ORM Layer: </span>Prisma</p>
+						<p><span class="embolden">Database: </span>PostgreSQL</p>
+						<p><span class="embolden">Hosting & Deployment: </span>Heroku</p>
+					</div>
+					<div class="colored-box red-bg">
+						<h3 class="case-study-subheading">API</h3>
+						<p><span class="embolden">Primary: </span>GraphQL</p>
+						<p><span class="embolden">Secondary: </span>REST</p>
+					</div>
+
+					<div class="colored-box grey-bg">
+						<h3 class="case-study-subheading">Frontend</h3>
+								<p>
+									React Native
+								</p>
+                                <p><span class="embolden">Framework: </span>Expo</p>
+						</ul>
+					</div>
+				</div>
+				<br />
+                <h2 class="case-study-heading">Backend</h2>
+
+				<p class="case-study-paragraph">
+					In order to reduce the transitional friction involved in moving from the frontend to the backend (and back again) during development, our team chose <span class="embolden">Node.js</span> for our backend so that we could use JavaScript throughout the stack. Additionally, we used <span class="embolden">Express.js</span> middleware to handle routing for the <a href="https://stripe.com/" target="blank" class="body-link">Stripe</a> payment requests made from the frontend.
+				</p>
+                
+                <p class="case-study-paragraph">
+					Most of us had experience using Django's ORM and wanted something similar for our backend. We settled on <span class="embolden">Prisma</span> due to its ease of integration with Node.js and GraphQL, its thorough documentation, and the supplemental tools it comes bundled with (such as <a href="https://www.prisma.io/studio
+                    " target="blank" class="body-link">Prisma Studio</a>).
+				</p>
+                
+                <p class="case-study-paragraph">
+					For our database, we chose to use Heroku's <span class="embolden">PostgreSQL</span> service since we had already decided on using <span class="embolden">Heroku</span> for deployment and hosting. This proved to be a great decision; Heroku's PostgreSQL service is reliable and easily scalable. Setting up a local Postgres database for development is also quite simple and straightforward.
+				</p>
+                
+                <p class="case-study-paragraph">
+                    Finally, we chose to set up our API to primarily use <span class="embolden">GraphQL</span> to pull data from the database. None of us had used it previously, but we wanted to challenge ourselves and learn a new technology. We were attracted by its ability to specify exactly which data fields to return. We chose to use <a href="https://www.apollographql.com/
+                    " target="blank" class="body-link">Apollo GraphQL</a> to create our GraphQL server for various reasons, most important being the fact that it "just works". We initally tried using <i>express-graphql</i>; however, we had a great deal of trouble getting websockets and subscriptions to work properly and ultimately ditched it in favor of Apollo.
+				</p>
+                
+
+                <div class="screenshot" id="mechanicus-db-model">
+                    <a href="http://localhost:9000/images/mechanicus-db-diagram.png" target="blank">
+                    <img src="./images/mechanicus-db-diagram.png">
+                </a>
+                <div class="screenshot-subtitle">
+                    Mechanicus Database Diagram
+                </div>
+                </div>
+                <h2 class="case-study-heading">Frontend</h2>
+
+				<p class="case-study-paragraph">
+					From the beginning, our client expressed that they wanted to eventually release the mobile app to both Apple and Android devices. This made the choice to develop a single app in <span class="embolden">React Native</span> an obvious one. However, we did need to tap into native features for app features such as <a href="https://stripe.com/" target="blank" class="body-link">Stripe</a> payments. Most of our team had experience working in React Native (w/ Expo) already, making the frontend development process relatively smooth.
+				</p>
+                
+                <p class="case-study-paragraph">
+					To communicate with our GraphQL server, we chose to use Apollo's GraphQL client. This decision was primarily made to simplify our stack and avoid any potential compatibility issues between the server and client, since our server was also created using Apollo's GraphQL server library. The Apollo client provides a number of useful React hooks to facilitate basic CRUD functionality in addition to subscriptions.
+				</p>
+                
+                <p class="case-study-paragraph">
+					To communicate with our GraphQL server, we chose to use Apollo's GraphQL client. This decision was primarily made to simplify our stack and avoid any potential compatibility issues between the server and client, since our server was also created using Apollo's GraphQL server library.
+				</p>
+                
+                <div class="screenshot mockup">
+                    <a href="http://robertconnot.com/images/mechanicus-mockup.png" target="blank">
+                        <img src="./images/mechanicus-mockup.png">
+                    </a>
+                    <div class="screenshot-subtitle">
+						Mechanicus Mockup
+					</div>
+                </div>
+            <div class="case-study-video">
+            <iframe src="https://www.youtube.com/embed/D4GZas-xE1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" scrolling ="no"></iframe>
+            </div>
+            <div class='forward-path'>
+                <a href='index.html'>
+                    <div class='more-projects'><p>View More Projects</p></div>
+                </a>
+            </div>
+            </div>
+            <p id='credit'>© 2021 Handcrafted by Robert Connot</p> 
+		</div>
+	</body>
+</html>
