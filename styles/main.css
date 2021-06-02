@@ -777,6 +777,21 @@ nav a:hover {
   transition: 0.5s;
 }
 
+/* Media Audit */
+.media-audit-screenshot img {
+  outline: solid black 1px;
+  width: 100%;
+}
+
+.media-audit-project .imgBx {
+  background: white;
+}
+
+.media-audit-project img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 /* --- ANIMATIONS --- */
 @-webkit-keyframes slide-down {
   from {
