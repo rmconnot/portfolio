@@ -73,11 +73,6 @@ p {
   scroll-behavior: smooth;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 .row {
   @apply grid grid-cols-12 gap-x-4 sm:gap-x-8;
 }
