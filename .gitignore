@@ -1,4 +1,3 @@
-html-components.html
-case-studies
-leftover-css.css
-leftover-images
+node_modules
+.DS_Store*
+.DS_Store
