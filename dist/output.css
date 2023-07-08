@@ -677,24 +677,16 @@ video {
   clear: none;
 }
 
-.mb-32{
-  margin-bottom: 8rem;
+.mb-8{
+  margin-bottom: 2rem;
 }
 
 .mt-2{
   margin-top: 0.5rem;
 }
 
-.mt-48{
-  margin-top: 12rem;
-}
-
 .mt-8{
   margin-top: 2rem;
-}
-
-.mb-8{
-  margin-bottom: 2rem;
 }
 
 .box-border{
@@ -2402,6 +2394,11 @@ p {
   font-family: "Lato", sans-serif;
   vertical-align: baseline;
   scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 .row{
